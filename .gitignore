@@ -1,0 +1,5 @@
+env/
+dummy_data.py
+.hintrc
+__pycache__/
+instance/

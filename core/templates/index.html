@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block body %}
+<div class="jumbtron text-center">
+    <h1>Welcome To S-Blog</h1>
+    <p class="lead"> Just so you know, this is a blog application built on the Python Flask Framework and users can upload articles.</p>
+</div>
+<div class="jumbtron text-center">
+<h2>Our Latest Posts</h2>
+
+</div>
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      {% for post in posts %}
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">{{post.title}}</h5>
+            <p class="card-text">{{post.text[0:30]}}<a href="post/{{post.id}}" style="text-decoration: none;">.....</a></p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+              <a href="post/{{post.id}}"> <button type="button" class="btn btn-sm btn-outline-secondary">Read</button></a> 
+              </div>
+              <small class="text-muted">{{post.date_created}}</small>
+              <small class="text-muted">author : {{post.user.username}} </small>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}
