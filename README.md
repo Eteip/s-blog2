@@ -29,7 +29,7 @@ To Run This Project Do the Following:
 2. Activate the Virtual environmnet:
     `env\scripts\activate`
 3. Clone the repo:  
-    `git clone https://github.com/Digitalguyco/flask-blog-app.git`
+    `git clone https://github.com/Eteip/s-blog2.git`
 4. Cd into the cloned folder:  
     `cd (cloned folder name)` 
 5. install the Requirements
@@ -40,11 +40,6 @@ To Run This Project Do the Following:
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
-
-<!-- Outro -->
-<h1 align="center">
-   💜
-</h1>
 
 
 
